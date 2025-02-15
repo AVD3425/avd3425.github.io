@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect A</title>
+    <style>
+        body {
+            background-color: #f4e773d1;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            background-color:#6b03b6;
+            border-radius: 5px;
+            transition: background-color 0.01s ease;
+        }
+
+        nav a:hover {
+            background-color: #d069dd;
+        }
+
+        nav a.active {
+            background-color: #d9d957;
+            color: rgb(191, 173, 53);
+            border-color: #3498db;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .col {
+            padding: 20px;
+            min-height: 500px;
+        }
+
+        .left {
+            width: 25%;
+            background-color: #f1e3f3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .left button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .center {
+            width: 50%;
+            background-color: #9d9999;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center iframe {
+            width: 90%;
+            height: 250px;
+        }
+
+        .right {
+            width: 25%;
+            background-color: #f1e3f3;
+            text-align: center;
+        }
+
+        .right a {
+            display: block;
+            margin-top: 25px;
+            color: rgb(139, 97, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .right a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #d7c4fcaf;
+            color: rgba(201, 126, 242, 0.735);
+            text-align: left;
+            padding: 250px;
+            margin-top: 20px;
+        }
+
+        /* Stiluri pentru animația textului și imaginii */
+        .marquee-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+            background-color: #333;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: marquee 10s linear infinite;
+        }
+
+        .marquee-text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        .marquee-img {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Edusmart</h1>
+    <br>
+
+    <!-- Animația textului și imaginii -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-text">Reduceri de pana la 50% pana in luna <U>februarie</U></div>
+            <img src="/Users/dumitrachea/Downloads/pngegg (1).png" alt="Icon" class="marquee-img">
+        </div>
+    </div>
+
+    <header>
+        <h3>Platforma nr 1# din Romania de <u>10 ani</u></h3>
+    </header>
+
+    <nav>
+        <a href="#">Acasa</a>
+        <a href="#">Coș</a>
+        <a href="#">Logare</a>
+        <img src="/Users/dumitrachea/Downloads/Captură de ecran din 2025-02-15 la 16.21.04.png" alt="" width="38,5" height="38,5">
+    </nav>
+
+    <div class="container">
+        <div class="col left">
+            <h1>Abonament 1 an</h1>
+            <h3>39 Ron</h3>
+        </div>
+
+        <div class="col center">
+            <!-- Spațiu pentru o viitoare animație web sau conținut -->
+        </div>
+
+        <div class="col right">
+            <h1>Abonament 30 de zile</h1>
+            <h6>Dacă nu ești mulțumit, îți poți recupera banii în termen de 14 zile</h6>
+            <a href="https://www.wikipedia.org/" target="_blank">Vizitează Wikipedia</a>
+        </div>
+    </div>
+
+    <footer>
+        <h4 style="display: inline-flex; align-items: center; gap: 10px;">
+            <a href="tel:+40712345678" style="font-weight: bold; text-decoration: none; color: inherit;">Contact</a>
+            <img src="/Users/dumitrachea/Downloads/[CITYPNG.COM]Black Outline Phone Telephone Icon - 1000x1000.png" alt="Icon" width="15" height="15">
+        </h4>
+        <br>
+<br>
+        <h4>
+            <a href="tel:+40712345678" style="font-weight: bold; text-decoration: none; color: inherit;">Despre noi</a>
+            <img src="/Users/dumitrachea/Downloads/pngegg.png" alt="Icon" width="15" height="15">
+        </h4>
+        <br>
+
+        <h4>Nastase Raluca, Clasa a 9-a F</h4>
+        <img src="/Users/dumitrachea/Downloads/pngwing.com.png" alt="Descriere" style="display: block; margin-left: auto; width: 80px; height: auto;">
+    </footer>
+
+    <style>
+        footer {
+            background-color: #6b03b6;
+            color: rgb(237, 227, 255);
+            text-align: left;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    
+</body>
+</html>
